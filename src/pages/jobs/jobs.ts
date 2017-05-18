@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {JobsProvider} from "../../providers/jobs/jobs";
+import { JobsProvider } from "../../providers/jobs/jobs";
 
 /**
  * Generated class for the JobsPage page.
@@ -17,6 +17,9 @@ export class JobsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private jobs: JobsProvider) {
     console.log(jobs)
+    JobsProvider.load().subscribe(jobs=>{
+
+    });
   }
 
   ionViewDidLoad() {

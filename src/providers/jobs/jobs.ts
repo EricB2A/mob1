@@ -19,7 +19,7 @@ export class JobsProvider {
   }
 
   load(): any{
-
+    return true;
   }
 
 }
