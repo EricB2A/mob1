@@ -13,28 +13,28 @@ Please refer to the [Cordova documentation](http://cordova.apache.org/docs/en/la
 For iOS : 
 * [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 Then run `xcode-select --install`
-* The [deploy tools](https://www.npmjs.com/package/ios-deploy) with the command `npm install -g ios-deploy`
+* The [deploy tools](https://www.npmjs.com/package/ios-deploy) with the command `npm install -g ios-deploy`  
 
-### Ionic installation
-Simply run `sudo npm install -g ionic`.
+### Ionic installation  
+Simply run `sudo npm install -g ionic`.  
 
-To enable the platform, use the following commands
-`ionic platform add ios`
-or/and
-`ionic platform add android`
+To enable the platform, use the following commands  
+`ionic platform add ios`  
+or/and  
+`ionic platform add android`  
 
 And for testing, use 
-`ionic build ios` then `ionic emulate ios`
-and/or
-`ionic build android` then `ionic emulate android`
+`ionic build ios` then `ionic emulate ios`  
+and/or  
+`ionic build android` then `ionic emulate android`  
 
 If you want to test it as a native app, use  
-`ionic run ios`
-and/or
-`ionic run android`
+`ionic run ios`  
+and/or  
+`ionic run android`  
 
-You can also have access to the app in your browser direcly by using 
-`ionic serve`
+You can also have access to the app in your browser direcly by using  
+`ionic serve`  
 
 If you have any trouble at this point, please refer to the [official documentation](http://ionicframework.com/docs/v1/guide/installation.html)
 
