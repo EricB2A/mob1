@@ -5,18 +5,18 @@
 
 ### Requirements
 *Important: All the requirements listed bellow need to be installed only once. You don't need to install it if you have already done some android or ios development.*
-* [Node.JS](https://nodejs.org/en/)
+* [Node.JS](https://nodejs.org/en/)  
 For Android :
 * [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (JDK) 8 or Later
 * [Android SDK](https://developer.android.com/studio/index.html) 
-Please refer to the [Cordova documentation](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html) in case of trouble.
+Please refer to the [Cordova documentation](http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html) in case of trouble.  
 For iOS : 
 * [XCode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 Then run `xcode-select --install`
 * The [deploy tools](https://www.npmjs.com/package/ios-deploy) with the command `npm install -g ios-deploy`  
 
 ### Ionic installation  
-Simply run `sudo npm install -g ionic`.  
+Simply run `sudo npm install -g ionic`.    
 
 To enable the platform, use the following commands  
 `ionic platform add ios`  
