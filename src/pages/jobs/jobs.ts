@@ -16,9 +16,8 @@ import { JobsProvider } from "../../providers/jobs/jobs";
 
 export class JobsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private jobs: JobsProvider) {
-    console.log(jobs)
     // JobsProvider.load().subscribe(jobs=>{
-    //
+    // console.log(jobs);
     // });
   }
 

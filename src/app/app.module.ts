@@ -7,11 +7,21 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { AuthentificationPage} from '../pages/authentification/authentification'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { JobsPage } from "../pages/jobs/jobs";
 import { JobsProvider } from '../providers/jobs/jobs';
+import {HttpModule} from "@angular/http";
+import {CloudModule} from "@ionic/cloud-angular";
+import {CloudSettings} from "@ionic/cloud/dist/es5";
+
+// const cloudSettings: CloudSettings = {
+//   'core': {
+//     'app_id': '1'
+//   }
+// };
+
 
 @NgModule({
   declarations: [
@@ -20,11 +30,13 @@ import { JobsProvider } from '../providers/jobs/jobs';
     ContactPage,
     HomePage,
     TabsPage,
-    JobsPage
+    JobsPage,
+    AuthentificationPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,7 +45,8 @@ import { JobsProvider } from '../providers/jobs/jobs';
     ContactPage,
     HomePage,
     TabsPage,
-    JobsPage
+    JobsPage,
+    AuthentificationPage
   ],
   providers: [
     StatusBar,

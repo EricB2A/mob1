@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import {Observable} from "rxjs/Observable";
+import {Http} from "@angular/http";
 import 'rxjs/add/operator/map';
 
-import {Job} from '../models/job';
+import {Job} from "../../models/jobs";
 
 /*
   Generated class for the JobsProvider provider.
@@ -13,13 +12,13 @@ import {Job} from '../models/job';
 */
 @Injectable()
 export class JobsProvider {
+  apiUrl = "10.....";
+  constructor(public http: Http) { }
 
-  constructor(public http: Http) {
-    console.log('Hello JobsProvider Provider');
+  load(): any/*Observable<Job[]>*/ {
+    console.log("DA");
+    return this.http.get(this.apiUrl+"/users")
+      .map(res => <Job>res.json());
   }
-
-  // load(): any{
-  //   return true;
-  // }
 
 }
