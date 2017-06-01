@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
 import {Observable} from "rxjs/Observable";
+import 'rxjs/add/operator/map';
 
 import {Job} from '../models/job';
 
@@ -18,8 +18,8 @@ export class JobsProvider {
     console.log('Hello JobsProvider Provider');
   }
 
-  load(): any{
-    return true;
-  }
+  // load(): any{
+  //   return true;
+  // }
 
 }

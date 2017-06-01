@@ -13,13 +13,13 @@ import { JobsProvider } from "../../providers/jobs/jobs";
   selector: 'page-jobs',
   templateUrl: 'jobs.html',
 })
-export class JobsPage {
 
+export class JobsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private jobs: JobsProvider) {
     console.log(jobs)
-    JobsProvider.load().subscribe(jobs=>{
-
-    });
+    // JobsProvider.load().subscribe(jobs=>{
+    //
+    // });
   }
 
   ionViewDidLoad() {
